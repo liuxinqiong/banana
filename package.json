@@ -1,0 +1,33 @@
+{
+  "name": "banana",
+  "version": "1.0.0",
+  "description": "monorepo template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuxinqiong/banana.git"
+  },
+  "author": "ethan",
+  "license": "ISC",
+  "keywords": [
+    "monorepo",
+    "lerna"
+  ],
+  "bugs": {
+    "url": "https://github.com/liuxinqiong/banana/issues"
+  },
+  "homepage": "https://github.com/liuxinqiong/banana#readme",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "jest": "27.3.1"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}
