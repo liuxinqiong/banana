@@ -12,5 +12,8 @@
   "dependencies": {
     "@banana/utils": "^0.0.2-alpha.0",
     "axios": "0.23.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
