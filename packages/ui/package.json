@@ -1,6 +1,6 @@
 {
   "name": "@banana2/ui",
-  "version": "1.0.4-alpha.0",
+  "version": "1.0.5-alpha.0",
   "description": "> TODO: description",
   "author": "liuxinqiong <372513646@qq.com>",
   "homepage": "https://github.com/liuxinqiong/banana/tree/main/packages/ui#readme",
@@ -27,7 +27,7 @@
     "url": "https://github.com/liuxinqiong/banana/issues"
   },
   "dependencies": {
-    "@banana2/utils": "^1.0.1-alpha.0",
+    "@banana2/utils": "^1.0.2-alpha.0",
     "axios": "0.23.0"
   },
   "gitHead": "94b0e35daf3056fc53b63f7c03b0845981b1f976"
