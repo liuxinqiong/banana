@@ -10,8 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/liuxinqiong/banana.git"
   },
-  "author": "ethan",
-  "license": "ISC",
+  "author": "liuxinqiong",
+  "license": "MIT",
   "keywords": [
     "monorepo",
     "lerna"
