@@ -1,5 +1,5 @@
 {
-  "name": "@banana3/ui",
+  "name": "@banana2/ui",
   "version": "1.0.3-alpha.0",
   "description": "> TODO: description",
   "author": "liuxinqiong <372513646@qq.com>",
@@ -29,5 +29,6 @@
   "dependencies": {
     "@banana/utils": "^1.0.1-alpha.0",
     "axios": "0.23.0"
-  }
+  },
+  "gitHead": "94b0e35daf3056fc53b63f7c03b0845981b1f976"
 }
