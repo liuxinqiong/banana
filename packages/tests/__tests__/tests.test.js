@@ -2,6 +2,6 @@
 
 const tests = require('..');
 
-describe('@banana/tests', () => {
+describe('@banana2/tests', () => {
     it('needs tests');
 });
