@@ -4,8 +4,8 @@
 
 ## Usage
 
-```
-const tests = require('@banana2/tests');
+```js
+const tests = require('@banana2/tests')
 
 // TODO: DEMONSTRATE API
 ```
