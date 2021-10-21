@@ -1,5 +1,5 @@
 {
-  "name": "@banana-utils",
+  "name": "@banana/utils",
   "version": "0.0.5-alpha.0",
   "description": "",
   "main": "index.js",
