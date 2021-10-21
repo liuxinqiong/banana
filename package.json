@@ -1,4 +1,8 @@
 {
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "name": "banana",
   "version": "1.0.0",
   "description": "monorepo template",
@@ -20,10 +24,6 @@
     "url": "https://github.com/liuxinqiong/banana/issues"
   },
   "homepage": "https://github.com/liuxinqiong/banana#readme",
-  "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
   "dependencies": {
     "jest": "27.3.1"
   },
