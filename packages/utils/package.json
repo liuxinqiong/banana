@@ -1,25 +1,33 @@
 {
-  "private": false,
   "name": "@banana/utils",
-  "version": "0.0.9-alpha.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "liuxinqiong <372513646@qq.com>",
+  "homepage": "https://github.com/liuxinqiong/banana/tree/main/packages/utils#readme",
+  "license": "ISC",
+  "main": "lib/utils.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
   },
-  "author": "liuxinqiong",
-  "license": "MIT",
-  "dependencies": {
-    "axios": "0.19.0",
-    "lodash": "4.17.21"
-  },
+  "files": [
+    "lib"
+  ],
   "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org"
+    "access": "public"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/liuxinqiong/banana.git",
-    "directory": "packages/utils"
+    "url": "git+https://github.com/liuxinqiong/banana.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/liuxinqiong/banana/issues"
+  },
+  "dependencies": {
+    "axios": "0.19.0",
+    "lodash": "4.17.21"
   }
 }
