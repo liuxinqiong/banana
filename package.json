@@ -8,7 +8,16 @@
   "description": "monorepo template",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:ci": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npm run lint:js && npm run lint:style && npm run lint:prettier",
+    "lint:js": "eslint --cache --ext .js,.jsx,.ts,.tsx --format=pretty .",
+    "lint:style": "stylelint **/*.{css,scss,sass,less}",
+    "lint:prettier": "prettier -c \"**/*\"",
+    "lint:fix": "npm run lint:fix-js && npm run lint:fix-style && npm run lint:fix-prettier",
+    "lint:fix-js": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx --format=pretty .",
+    "lint:fix-style": "stylelint --fix **/*.{css,scss,sass,less}",
+    "lint:fix-prettier": "prettier -c --write \"**/*\""
   },
   "repository": {
     "type": "git",
@@ -24,10 +33,27 @@
     "url": "https://github.com/liuxinqiong/banana/issues"
   },
   "homepage": "https://github.com/liuxinqiong/banana#readme",
-  "dependencies": {
-    "jest": "27.3.1"
-  },
   "devDependencies": {
-    "lerna": "^4.0.0"
+    "@commitlint/cli": "^13.2.1",
+    "@commitlint/config-conventional": "^13.2.0",
+    "@umijs/fabric": "2.5.7",
+    "husky": "^7.0.4",
+    "jest": "27.3.1",
+    "lerna": "^4.0.0",
+    "lint-staged": "^11.2.4",
+    "typescript": "^4.4.4"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint --edit '$1'",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.{js,ts,jsx,tsx}": "npm run lint:js",
+    "**/*.{css,scss,sass,less}": "npm run lint:style",
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,less,md}": [
+      "npm run lint:prettier"
+    ]
   }
 }

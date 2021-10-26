@@ -5,13 +5,11 @@
   "author": "liuxinqiong <372513646@qq.com>",
   "homepage": "https://github.com/liuxinqiong/banana/tree/main/packages/ui#readme",
   "license": "ISC",
-  "main": "lib/ui.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.js",
   "files": [
-    "lib"
+    "dist"
   ],
   "publishConfig": {
     "access": "public"

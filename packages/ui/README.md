@@ -5,7 +5,7 @@
 ## Usage
 
 ```js
-const ui = require('@banana2/ui')
+const ui = require('@banana2/ui');
 
 // TODO: DEMONSTRATE API
 ```

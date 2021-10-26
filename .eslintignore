@@ -1,0 +1,6 @@
+.history
+**/coverage/**
+**/node_modules/**
+packages/*/build/**
+packages/*/dist/**
+.eslintrc.js
