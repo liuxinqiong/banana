@@ -9,3 +9,7 @@ export function isEqual(a, b) {
 export function mutObject(o) {
   o.name = 'good';
 }
+
+export function isArray(o) {
+  return Array.isArray(o);
+}
