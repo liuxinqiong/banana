@@ -8,6 +8,7 @@
   "description": "monorepo template",
   "main": "index.js",
   "scripts": {
+    "prepare": "husky install",
     "test": "echo \"Error: no test specified\" && exit 1",
     "test:ci": "echo \"Error: no test specified\" && exit 1",
     "lint": "npm run lint:js && npm run lint:style && npm run lint:prettier",
@@ -17,8 +18,7 @@
     "lint:fix": "npm run lint:fix-js && npm run lint:fix-style && npm run lint:fix-prettier",
     "lint:fix-js": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx --format=pretty .",
     "lint:fix-style": "stylelint --fix **/*.{css,scss,sass,less}",
-    "lint:fix-prettier": "prettier -c --write \"**/*\"",
-    "prepare": "husky install"
+    "lint:fix-prettier": "prettier -c --write \"**/*\""
   },
   "repository": {
     "type": "git",

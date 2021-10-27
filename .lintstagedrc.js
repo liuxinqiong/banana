@@ -1,5 +1,5 @@
 module.exports = {
-  '**/*.{js,ts,jsx,tsx}': 'npm run lint:js',
-  '**/*.{css,scss,sass,less}': 'npm run lint:style',
-  '**/*': ['npm run lint:prettier'],
+  '**/*.{js,ts,jsx,tsx}': 'eslint --cache --format=pretty',
+  '**/*.{css,scss,sass,less}': 'stylelint',
+  '**/*': ['prettier --write', 'git add'],
 };
