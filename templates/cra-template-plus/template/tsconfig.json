@@ -1,0 +1,7 @@
+{
+  "extends": "./paths.json",
+  "compilerOptions": {},
+  "include": [
+    "src"
+  ]
+}

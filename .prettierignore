@@ -31,5 +31,6 @@ tsconfig.json
 .gitmodules
 .gitkeep
 .gitignore
+gitignore
 .gitattributes
 .husky

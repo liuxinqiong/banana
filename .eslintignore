@@ -4,3 +4,4 @@
 packages/*/build/**
 packages/*/dist/**
 .eslintrc.js
+config-overrides.js

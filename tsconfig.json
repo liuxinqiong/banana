@@ -2,9 +2,12 @@
   "extends": "./tsconfig.base.json",
   "include": [
     "packages/*/src",
+    "templates/**/src",
   ],
   "exclude": [
     "packages/*/src/*.test.tsx",
     "packages/*/src/*.stories.tsx",
+    "templates/**/src/*.test.tsx",
+    "templates/**/src/*.stories.tsx",
   ]
 }

@@ -1,0 +1,27 @@
+import { takeLatest, put, call, fork } from 'redux-saga/effects';
+
+import ProjectApi from '@/api/ProjectApi';
+import type { ProjectDO } from '@/models/project';
+
+import * as types from './types';
+
+export interface GetProjectAction {
+  type: typeof types.GET_PROJECT_REQUEST;
+  payload: string;
+}
+
+function* getProject(action: GetProjectAction) {
+  const currentProject: ProjectDO = yield call(ProjectApi.getProjectById, action.payload);
+  yield put({
+    type: types.SET_CURRENT_PROJECT,
+    payload: currentProject,
+  });
+}
+
+function* watchGetProjectRequest() {
+  yield takeLatest(types.GET_PROJECT_REQUEST, getProject);
+}
+
+const defaultWatchList = [fork(watchGetProjectRequest)];
+
+export default defaultWatchList;
