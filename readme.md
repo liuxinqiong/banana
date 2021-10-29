@@ -9,3 +9,11 @@ integrate necessary tools
 - [ ] jest
 - [ ] rollup
 - [ ] storybook、jsdoc
+
+## create app
+
+If you want to create a react app by using custom template. Just run
+
+```shell
+npm run create <project_name>
+```

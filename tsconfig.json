@@ -3,6 +3,7 @@
   "include": [
     "packages/*/src",
     "templates/**/src",
+    "scripts"
   ],
   "exclude": [
     "packages/*/src/*.test.tsx",
